@@ -1,5 +1,6 @@
 import cv2
 from picamera2 import Picamera2
+print("Hola ruso")
 cam = Picamera2()
 cam.preview_configuration.main.size = (800, 600)
 cam.preview_configuration.main.format= "RGB888"
