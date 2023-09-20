@@ -42,7 +42,7 @@ print('the image {} has {} channels'.format(output_filename, num_channels))
 # Plot each channel separately
 for channel_index in range(num_channels):
     plt.subplot(1, num_channels, channel_index + 1)
-    plt.imshow(multispectral_image[..., channel_index], cmap='gray')
+    plt.imshow(multispectral_image[..., channel_index])
     plt.title(f'Channel {channel_index + 1}')
     plt.axis('off')
 
